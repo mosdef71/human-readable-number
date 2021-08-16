@@ -1,24 +1,15 @@
 module.exports = function toReadable (number) {
-    let dict = {
-      1: "one",
-      2: "two",
-      3: "three",
-      4: "four",
-      5: "five",
-      6: "six",
-      7: "seven",
-      8: "eight",
-      9: "nine",
-      10: "ten",
-      11: "eleven",
-      12: "twelve",
-      13: "thirteen",
-      15: "fifteen",
-      20: "twenty",
-      30: "thirty",
-      40: "forty",
-      50: "fifty",
-    }
-    
-    return dict[number]
+  const array = [ "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eightteen", "nineteen"]
+	const dozen = ["twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+
+	if (number === 0) {
+		return array[0];
+	} else if (number < 20) {
+		return array[number];
+	}
+
+
+
+
+
 }
